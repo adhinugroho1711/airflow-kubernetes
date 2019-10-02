@@ -12,7 +12,7 @@ spec:
   accessModes:
     - ReadWriteMany
   hostPath:
-    path: "/mnt/airflow"
+    path: "/mnt/data"
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -42,7 +42,7 @@ spec:
   accessModes:
     - ReadWriteMany
   hostPath:
-    path: "/mnt/airflow"
+    path: "/mnt/data"
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -72,7 +72,7 @@ spec:
   accessModes:
     - ReadWriteMany
   hostPath:
-    path: "/mnt/airflow"
+    path: "/mnt/data"
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -102,7 +102,7 @@ spec:
   accessModes:
     - ReadWriteMany
   hostPath:
-    path: "/mnt/airflow"
+    path: "/mnt/data"
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -133,7 +133,7 @@ spec:
   accessModes:
     - ReadWriteMany
   hostPath:
-    path: "/mnt/airflow"
+    path: "/mnt/data"
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1

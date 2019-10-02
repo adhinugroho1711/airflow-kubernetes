@@ -311,7 +311,7 @@ externalDatabase:
   ## Database password
   password: jateng001
   ## Database name
-    database: airflow
+  database: airflow
   ## Database port number
   port: 32741
 

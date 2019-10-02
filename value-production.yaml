@@ -40,7 +40,7 @@ airflow:
   fernetKey: ""
   service:
     annotations: {}
-    type: ClusterIP
+    type: NodePort
     externalPort: 8080
   ##
   ## The executor to use.

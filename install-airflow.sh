@@ -1,2 +1,2 @@
 kubectl apply -f airflow-pvc.yaml
-helm install --name airflow -f value-production.yaml stable/redis
+helm install --name airflow -f value-production.yaml stable/airflow

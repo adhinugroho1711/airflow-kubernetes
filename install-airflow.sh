@@ -1,2 +1,1 @@
-kubectl apply -f airflow-pvc.yaml
-helm install --name airflow -f value-production.yaml stable/airflow
+helm install --name airflow -f values-production.yaml bitnami/airflow

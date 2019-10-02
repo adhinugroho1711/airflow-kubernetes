@@ -512,7 +512,7 @@ postgresql:
   ##
   ## If you are bringing your own PostgreSQL, you should set postgresHost and
   ## also probably service.port, postgresUser, postgresPassword, and postgresDatabase
-  postgresHost: 192.168.64.7
+  postgresHost: '192.168.64.7'
   ##
   ## PostgreSQL port
   service:
@@ -558,7 +558,7 @@ redis:
 
   ##
   ## If you are bringing your own redis, you can set the host in redisHost.
-  redisHost: 192.168.64.7
+  redisHost: '192.168.64.7'
   ##
   ## Redis password
   ##

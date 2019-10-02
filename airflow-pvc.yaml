@@ -31,6 +31,36 @@ spec:
 kind: PersistentVolume
 apiVersion: v1
 metadata:
+  name: airflow-postgresql
+  labels:
+    type: local
+    app: airflow
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 8Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: "/mnt/airflow"
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: airflow-postgresql
+  labels:
+    app: airflow
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 8Gi
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
   name: airflow-scheduler
   labels:
     type: local

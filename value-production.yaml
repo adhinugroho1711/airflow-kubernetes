@@ -197,7 +197,7 @@ flower:
     #   memory: "128Mi"
   service:
     annotations: {}
-    type: ClusterIP
+    type: NodePort
     externalPort: 5555
 
   ## Support Node, affinity and tolerations for flower pod assignment
@@ -532,7 +532,7 @@ postgresql:
   persistence:
     ##
     ## Enable PostgreSQL persistence using Persistent Volume Claims.
-    enabled: true
+    enabled: false
     ##
     ## Persistant class
     # storageClass: classname
